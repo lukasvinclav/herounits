@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Accomodio | HeroUnits.com</title>
+
+  <style>
+    #toggle-navigation:checked + nav { display: flex; }
+  </style>
+</head>
+
+<body>
+  <div class="antialiased bg-white px-8">
+    <div class="container mx-auto relative">
+      <div class="flex flex-row items-center leading-none py-6">
+        <a href="#" class="font-bold text-xl">Accomodio<span class="text-red-400">.</span></a>
+
+        <input type="checkbox" id="toggle-navigation" class="hidden">
+
+        <nav class="absolute bg-white flex flex-col flex-grow font-medium hidden left-0 mt-16 px-4 right-0 rounded shadow text-gray-700 top-0 z-40 lg:bg-transparent lg:flex lg:flex-row lg:ml-4 lg:mr-0 lg:mt-0 lg:pr-0 lg:relative lg:shadow-none">
+          <ul class="flex flex-col lg:items-flex-start lg:flex-row lg:mt-0">
+            <li class="py-3">
+              <a href="#" class="hover:text-red-600">Reservations</a>
+            </li>
+
+            <li class="py-3 lg:ml-8">
+              <a href="#" class="hover:text-red-600">Apartments</a>
+            </li>
+
+            <li class="py-3 lg:ml-8">
+              <a href="#" class="hover:text-red-600">Affiliate Program</a>
+            </li>
+          </ul>
+
+          <ul class="flex flex-col lg:flex-row lg:ml-auto">
+            <li class="py-4 lg:py-3 lg:pl-8">
+              <a href="#" class="hover:text-red-600">Sign In</a>
+            </li>
+
+            <li class="lg:py-0 lg:pl-8">
+              <a href="#" class="bg-red-500 inline-block mb-4 px-5 py-3 rounded text-center text-white w-full lg:mb-0 lg:py-3 lg:px-4 hover:bg-red-600">
+                Create Account
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <label class="cursor-pointer flex flex-col font-bold items-center ml-auto p-2 text-gray-800 text-xs uppercase z-50 focus:outline-none focus:text-gray-700 lg:hidden" for="toggle-navigation">
+          <svg class="fill-current text-gray-500 hover:text-gray-900" width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect x="0" y="0" width="20" height="2" rx="1"></rect>
+            <rect x="0" y="6" width="20" height="2" rx="1"></rect>
+            <rect x="0" y="12" width="20" height="2" rx="1"></rect>
+          </svg>
+        </label>
+      </div>
+    </div>
+
+    <div class="py-8 sm:pt-24 sm:py-16">
+      <div class="container mx-auto relative">
+        <div class="relative z-20">
+          <div class="bg-gray-100 font-medium inline-block mb-4 text-gray-600 text-sm rounded-full p-1">
+            <span class="inline-block px-2">Hotel Reservation</span> <span class="inline-block bg-red-500 px-2 text-white rounded-full">Tailwind CSS</span>
+          </div>
+
+          <h1 class="font-bold mb-4 text-2xl sm:text-left sm:text-4xl lg:leading-tight lg:w-1/2">
+            Book the perfect accomodation with us at best prices
+          </h1>
+
+          <p class="text-xl text-gray-700 sm:max-w-3xl lg:w-1/2">
+            Pestibulum gravida eros elit, ut tincidunt enim vulputate quis. Nulla venenatis non felis in tempor. Integer ante eros, venenatis eget
+          </p>
+
+          <form method="GET" action="?" class="mt-12">
+            <div class="flex flex-col md:flex-row">
+              <div class="mb-4 md:mr-4 md:w-3/12 md:w-3/12 lg:w-2/12 xl:w-3/12">
+                <label class="block font-bold mb-2 text-xs text-gray-500 uppercase">Check in</label>
+                <input type="text" class="appearance-none block border-2 border-gray-300  w-full bg-white text-gray-600 p-4 pr-8 rounded focus:border-red-500 focus:outline-none" placeholder="mm/dd/yyyy">
+              </div>
+
+              <div class="mb-4 md:mr-4 md:w-3/12 md:w-3/12 lg:w-2/12 xl:w-3/12">
+                <label class="block font-bold mb-2 text-xs text-gray-500 uppercase">Check out</label>
+                <input type="text" class="appearance-none block border-2 border-gray-300 w-full bg-white text-gray-600 p-4 pr-8 rounded focus:border-red-500 focus:outline-none" placeholder="mm/dd/yyyy">
+              </div>
+
+              <div class="mb-4 md:mr-4 md:w-2/12 md:w-3/12 lg:w-1/12">
+                <label class="block font-bold mb-2 text-xs text-gray-500 uppercase">Guests</label>
+                <input type="number" class="appearance-none block border-2 border-gray-300  w-full bg-white text-gray-600 p-4 pr-8 rounded focus:border-red-500 focus:outline-none" min="1" value="2">
+              </div>
+
+              <button type="submit" class="align-left bg-red-500 border-2 border-red-500 font-medium md:self-end mb-4 p-4 px-8 rounded text-white whitespace-no-wrap hover:border-red-600 hover:bg-red-600">
+                Check Availability
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="mt-8 relative lg:bottom-0 lg:h-full lg:-mt-16 lg:right-0 lg:top-0 lg:w-6/12 xl:w-5/12 lg:z-10 lg:absolute">
+          <img src="https://images.unsplash.com/photo-1508253578933-20b529302151?&w=1024&q=60" class="object-cover rounded lg:h-full"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

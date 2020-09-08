@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Profession | HeroUnits.com</title>
+
+  <style>
+    #toggle-navigation:checked + nav { display: flex; }
+  </style>
+</head>
+
+<body>
+  <div class="antialiased bg-white px-8">
+    <div class="container mx-auto">
+      <div class="flex items-center py-6">
+        <a href="#" class="leading-tight">
+          <strong class="block">Profession</strong>
+          <span class="text-gray-700 leading-none text-sm">Job Board Component</span>
+        </a>
+
+        <input type="checkbox" id="toggle-navigation" class="hidden">
+
+        <nav class="absolute bg-white font-medium hidden leading-none left-0 mx-8 mt-20 px-4 right-0 shadow text-gray-700 top-0 lg:ml-auto lg:block lg:m-0 lg:relative lg:shadow-none">
+          <ul class="flex flex-col w-full lg:items-flex-start lg:flex-row">
+            <li class="py-3">
+              <a href="#" class="hover:text-gray-900">
+                Home
+              </a>
+            </li>
+
+            <li class="py-3 lg:ml-10">
+              <a href="#" class="hover:text-gray-900">
+                Pricing
+              </a>
+            </li>
+
+            <li class="py-3 lg:ml-10">
+              <a href="#" class="hover:text-gray-900">
+                Sign in
+              </a>
+            </li>
+
+            <li class="py-3 lg:ml-10">
+              <a href="#" class="hover:text-gray-900">
+                Register
+              </a>
+            </li>
+
+            <li class="lg:ml-10">
+              <a href="#" class="bg-green-600 block mb-4 px-4 py-3 rounded text-center text-white w-full lg:mb-0 hover:bg-green-500">Post a job</a>
+            </li>
+          </ul>
+        </nav>
+
+        <label class="cursor-pointer flex flex-col font-bold items-center ml-auto p-2 text-gray-800 text-xs uppercase z-50 focus:outline-none focus:text-gray-700 lg:hidden" for="toggle-navigation">
+          <svg class="fill-current text-gray-500 hover:text-gray-900" width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect x="0" y="0" width="20" height="2" rx="1"></rect>
+            <rect x="0" y="6" width="20" height="2" rx="1"></rect>
+            <rect x="0" y="12" width="20" height="2" rx="1"></rect>
+          </svg>
+        </label>
+      </div>
+
+      <div class="py-32">
+        <h1 class="font-bold mb-4 text-2xl lg:leading-tight lg:text-4xl ">
+          Easiest way how to find new remote work
+        </h1>
+
+        <p class="text-gray-700 text-xl">
+          Nunc commodo velit non nibh luctus, id dictum mi aliquam. Nulla sit amet ex turpis.
+        </p>
+
+        <form method="GET" action="?" class="mt-12">
+          <div class="flex flex-col lg:flex-row">
+            <div class="mb-4 lg:mr-4 lg:w-1/4">
+              <input type="text" class="appearance-none block border shadow-sm w-full bg-white text-gray-900 p-4 placeholder-gray-900 pr-8 rounded focus:outline-none" placeholder="Job position" required>
+            </div>
+
+            <div class="mb-4 lg:mr-4 lg:w-1/4">
+              <input type="text" class="appearance-none block border shadow-sm w-full bg-white text-gray-900 p-4 placeholder-gray-900 pr-8 rounded focus:outline-none" placeholder="Location (+5km)" required>
+            </div>
+
+            <button type="submit" class="align-left bg-green-600 font-medium leading-loose mb-4 px-6 py-3 rounded text-white hover:bg-green-500">
+              Search Jobs
+            </button>
+
+            <a href="#" class="align-left bg-white border font-medium leading-loose mb-4 lg:ml-4 px-6 py-3 rounded shadow-sm text-gray-600">
+              Advanced Search
+            </a>
+          </div>
+
+          <div class="text-gray-700 text-sm">
+            <strong class="font-normal">Last searches:</strong> <a href="#" class="hover:text-gray-900 underline">New York</a>, <a href="#" class="hover:text-gray-900 underline">Development</a>, <a href="#" class="hover:text-gray-900 underline">DevOps</a>, <a href="#" class="hover:text-gray-900 underline">California</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="antialiased bg-white border-t px-8">
+    <div class="container mx-auto">
+      <div class="grid lg:grid-cols-2 py-8">
+        <div class="pb-8 lg:mb-0 lg:pb-0 ">
+          <h3 class="mb-6">Best locations to work from</h3>
+
+          <ul class="flex flex-col lg:flex-row lg:flex-wrap">
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center pr-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">New York</a>
+                <span class="ml-3 text-gray-600 text-sm">923 positions</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pl-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Chicago</a>
+                <span class="ml-3 text-gray-600 text-sm">842 positions</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pr-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">London</a>
+                <span class="ml-3 text-gray-600 text-sm">712 positions</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pl-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Seattle</a>
+                <span class="ml-3 text-gray-600 text-sm">692 positions</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pr-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">San Francisco</a>
+                <span class="ml-3 text-gray-600 text-sm">522 positions</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pl-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Berlin</a>
+                <span class="ml-3 text-gray-600 text-sm">492 positions</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-6">Best industries to work in</h3>
+
+          <ul class="flex flex-col lg:flex-row lg:flex-wrap">
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pr-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Development</a>
+                <span class="ml-3 text-gray-600 text-sm">$8,209/monthly</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pl-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Education</a>
+                <span class="ml-3 text-gray-600 text-sm">$7,932/monthly</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pr-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Copywriting</a>
+                <span class="ml-3 text-gray-600 text-sm">$6,890/monthly</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pl-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Marketing</a>
+                <span class="ml-3 text-gray-600 text-sm">$5,053/monthly</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pr-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Product Owner</a>
+                <span class="ml-3 text-gray-600 text-sm">$4,028/monthly</span>
+              </div>
+            </li>
+
+            <li class="mb-3 lg:w-1/2">
+              <div class="flex items-center lg:pl-4">
+                <a href="#" class="text-gray-700 text-sm hover:underline">Management</a>
+                <span class="ml-2 text-gray-600 text-sm">$3,947/monthly</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
